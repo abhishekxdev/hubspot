@@ -9,7 +9,7 @@ import { Calendar } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Logo } from '@/components/Logo';
 import { Link, useNavigate } from 'react-router-dom';
-import { Calendar as CalendarIcon, Copy, Trash2, LogOut, Plus, ArrowUpRight, BarChart, Clock, Mail, Sparkles, LucideIcon, AlertCircle } from 'lucide-react';
+import { Calendar as CalendarIcon, Copy, Trash2, LogOut, Plus, ArrowUpRight, BarChart, Clock, Mail, Sparkles, DivideIcon as LucideIcon, AlertCircle } from 'lucide-react';
 import { format } from 'date-fns';
 import { cn } from '@/lib/utils';
 import { toast } from 'sonner';
