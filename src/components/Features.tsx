@@ -7,7 +7,7 @@ const AIAssistantIllustration = () => {
     return (
         <Card
             aria-hidden
-            className="relative space-y-4 p-6 bg-white border-2 border-white/20 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+            className="relative space-y-4 p-4 sm:p-6 bg-white border-2 border-white/20 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
             <div className="w-fit">
                 <Sparkles className="size-3.5 fill-violet-300 stroke-violet-300" />
                 <p className="mt-2 line-clamp-2 text-sm text-black">Get a complete overview of your HubSpot CRM data, including contacts, deals, and tickets in one unified dashboard.</p>
@@ -61,12 +61,12 @@ const AIAssistantIllustration = () => {
 export const Features = () => {
     return (
         <section id="features">
-            <div className="py-24">
-                <div className="mx-auto w-full max-w-3xl px-6">
-                    <h2 className="text-foreground text-balance text-3xl font-semibold md:text-4xl">
+            <div className="py-12 sm:py-16 md:py-24">
+                <div className="mx-auto w-full max-w-3xl px-4 sm:px-6">
+                    <h2 className="text-foreground text-balance text-2xl sm:text-3xl md:text-4xl font-semibold text-center sm:text-left">
                         <span className="text-muted-foreground">Everything you need to</span> manage your HubSpot CRM
                     </h2>
-                    <div className="@container mt-12 space-y-12">
+                    <div className="@container mt-8 sm:mt-12 space-y-8 sm:space-y-12">
                         <Card
                             className="relative overflow-hidden p-0 sm:col-span-2 bg-white/10 backdrop-blur-sm border-2 border-white/20">
                             <img
@@ -74,11 +74,11 @@ export const Features = () => {
                                 alt=""
                                 className="absolute inset-0 size-full object-cover opacity-20"
                             />
-                            <div className="m-auto max-w-md p-4 sm:p-12">
+                            <div className="m-auto max-w-md p-4 sm:p-8 md:p-12">
                                 <AIAssistantIllustration />
                             </div>
                         </Card>
-                        <div className="grid gap-6 sm:grid-cols-2">
+                        <div className="grid gap-4 sm:gap-6 sm:grid-cols-2">
                             {[
                                 {
                                     title: 'Real-time HubSpot Sync',
@@ -113,13 +113,13 @@ export const Features = () => {
                             ].map((feature, index) => (
                                 <Card
                                     key={index}
-                                    className="relative space-y-4 p-6 bg-white border-2 border-white/20 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-                                    <div className="size-10 rounded-lg bg-violet-100/50 flex items-center justify-center">
-                                        <feature.icon className="size-5 text-violet-600" />
+                                    className="relative space-y-3 sm:space-y-4 p-4 sm:p-6 bg-white border-2 border-white/20 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+                                    <div className="size-8 sm:size-10 rounded-lg bg-violet-100/50 flex items-center justify-center">
+                                        <feature.icon className="size-4 sm:size-5 text-violet-600" />
                                     </div>
                                     <div>
-                                        <h3 className="font-semibold text-black">{feature.title}</h3>
-                                        <p className="mt-2 text-sm text-black/80">{feature.description}</p>
+                                        <h3 className="font-semibold text-black text-sm sm:text-base">{feature.title}</h3>
+                                        <p className="mt-2 text-xs sm:text-sm text-black/80">{feature.description}</p>
                                     </div>
                                 </Card>
                             ))}
