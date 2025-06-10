@@ -78,10 +78,10 @@ export const Hero = () => {
                             </div>
                         </div>
 
-                        {/* Full Width Dashboard Preview */}
-                        <div className="w-full px-4 sm:px-6 lg:px-8 mt-12 md:mt-20">
+                        {/* Dashboard Preview - Constrained but still wide */}
+                        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-12 md:mt-20">
                             <div className="relative overflow-hidden border border-white/20 rounded-2xl shadow-xl shadow-black/15 ring-1 ring-white/20 bg-white">
-                                <div className="p-4 sm:p-6 md:p-8 lg:p-12">
+                                <div className="p-4 sm:p-6 md:p-8 lg:p-10">
                                     <div className="bg-gray-50 rounded-lg p-4 sm:p-6 lg:p-8 border border-gray-200">
                                         <div className="flex justify-between items-center mb-6">
                                             <h3 className="text-xl lg:text-2xl font-semibold text-gray-800">CRM Dashboard Preview</h3>
@@ -92,7 +92,7 @@ export const Hero = () => {
                                         </div>
                                         
                                         {/* Pipeline Overview */}
-                                        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-8">
+                                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
                                             <div className="bg-white p-4 rounded-lg border border-gray-200">
                                                 <p className="text-xs text-gray-500 mb-1">Total Deals</p>
                                                 <p className="text-2xl font-semibold text-violet-600">24</p>
@@ -125,14 +125,14 @@ export const Hero = () => {
                                             </div>
                                         </div>
 
-                                        {/* Recent Contacts - Now in a wider grid */}
+                                        {/* Recent Contacts */}
                                         <div className="space-y-4">
                                             <div className="flex justify-between items-center">
                                                 <h4 className="font-medium text-gray-700">Recent Contacts</h4>
                                                 <button className="text-xs text-violet-600 hover:text-violet-700">View All</button>
                                             </div>
                                             
-                                            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+                                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                                                 {/* Contact 1 */}
                                                 <div className="flex justify-between items-center p-4 bg-white rounded-lg border border-gray-200">
                                                     <div className="flex items-center gap-3">
@@ -246,7 +246,7 @@ export const Hero = () => {
                                         {/* Quick Actions */}
                                         <div className="mt-8 pt-6 border-t border-gray-200">
                                             <h4 className="font-medium text-gray-700 mb-4">Quick Actions</h4>
-                                            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-3">
+                                            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
                                                 <button className="p-3 bg-white rounded-lg border border-gray-200 text-center hover:bg-gray-50 transition-colors">
                                                     <div className="w-8 h-8 bg-violet-100 rounded-lg mx-auto mb-2 flex items-center justify-center">
                                                         <span className="text-violet-600 text-sm">+</span>
@@ -282,18 +282,6 @@ export const Hero = () => {
                                                         <span className="text-indigo-600 text-sm">📞</span>
                                                     </div>
                                                     <span className="block text-xs text-gray-600 font-medium">Make Call</span>
-                                                </button>
-                                                <button className="p-3 bg-white rounded-lg border border-gray-200 text-center hover:bg-gray-50 transition-colors">
-                                                    <div className="w-8 h-8 bg-teal-100 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                                                        <span className="text-teal-600 text-sm">📅</span>
-                                                    </div>
-                                                    <span className="block text-xs text-gray-600 font-medium">Book Meeting</span>
-                                                </button>
-                                                <button className="p-3 bg-white rounded-lg border border-gray-200 text-center hover:bg-gray-50 transition-colors">
-                                                    <div className="w-8 h-8 bg-pink-100 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                                                        <span className="text-pink-600 text-sm">⚙️</span>
-                                                    </div>
-                                                    <span className="block text-xs text-gray-600 font-medium">Settings</span>
                                                 </button>
                                             </div>
                                         </div>
