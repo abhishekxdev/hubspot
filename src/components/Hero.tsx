@@ -77,110 +77,182 @@ export const Hero = () => {
                                 </div>
                             </div>
 
-                            <div className="relative mx-auto mt-12 max-w-7xl overflow-hidden rounded-3xl bg-white/10 backdrop-blur-sm md:mt-20">
-                                <div className="bg-white/20 relative m-2 overflow-hidden border border-white/20 rounded-2xl shadow-xl shadow-black/15 ring-1 ring-white/20 sm:m-4 md:m-6">
+                            <div className="relative mx-auto mt-12 max-w-full overflow-hidden rounded-3xl md:mt-20">
+                                <div className="relative m-2 overflow-hidden border border-white/20 rounded-2xl shadow-xl shadow-black/15 ring-1 ring-white/20 sm:m-4 md:m-6 bg-white">
                                     <div className="p-4 sm:p-6 md:p-8">
-                                        <div className="bg-white/30 rounded-lg p-4 sm:p-6 border border-white/20">
+                                        <div className="bg-gray-50 rounded-lg p-4 sm:p-6 border border-gray-200">
                                             <div className="flex justify-between items-center mb-6">
-                                                <h3 className="text-lg font-semibold">CRM Dashboard Preview</h3>
+                                                <h3 className="text-lg font-semibold text-gray-800">CRM Dashboard Preview</h3>
                                                 <div className="flex gap-2">
                                                     <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs">Active</span>
                                                     <span className="px-3 py-1 bg-violet-100 text-violet-700 rounded-full text-xs">HubSpot Sync</span>
                                                 </div>
                                             </div>
-                                            <div className="space-y-4 text-sm text-gray-600">
-                                                {/* Pipeline Overview */}
-                                                <div className="grid grid-cols-4 gap-4 mb-6">
-                                                    <div className="bg-white/40 p-4 rounded-lg">
-                                                        <p className="text-xs text-gray-500">Total Deals</p>
-                                                        <p className="text-2xl font-semibold text-violet-600">24</p>
-                                                    </div>
-                                                    <div className="bg-white/40 p-4 rounded-lg">
-                                                        <p className="text-xs text-gray-500">Active Contacts</p>
-                                                        <p className="text-2xl font-semibold text-violet-600">156</p>
-                                                    </div>
-                                                    <div className="bg-white/40 p-4 rounded-lg">
-                                                        <p className="text-xs text-gray-500">Pipeline Value</p>
-                                                        <p className="text-2xl font-semibold text-violet-600">$450K</p>
-                                                    </div>
-                                                    <div className="bg-white/40 p-4 rounded-lg">
-                                                        <p className="text-xs text-gray-500">Tasks Due</p>
-                                                        <p className="text-2xl font-semibold text-violet-600">12</p>
-                                                    </div>
+                                            
+                                            {/* Pipeline Overview */}
+                                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                                                <div className="bg-white p-4 rounded-lg border border-gray-200">
+                                                    <p className="text-xs text-gray-500 mb-1">Total Deals</p>
+                                                    <p className="text-2xl font-semibold text-violet-600">24</p>
+                                                    <p className="text-xs text-green-600">+12% this month</p>
                                                 </div>
+                                                <div className="bg-white p-4 rounded-lg border border-gray-200">
+                                                    <p className="text-xs text-gray-500 mb-1">Active Contacts</p>
+                                                    <p className="text-2xl font-semibold text-violet-600">156</p>
+                                                    <p className="text-xs text-green-600">+8% this month</p>
+                                                </div>
+                                                <div className="bg-white p-4 rounded-lg border border-gray-200">
+                                                    <p className="text-xs text-gray-500 mb-1">Pipeline Value</p>
+                                                    <p className="text-2xl font-semibold text-violet-600">$450K</p>
+                                                    <p className="text-xs text-green-600">+15% this month</p>
+                                                </div>
+                                                <div className="bg-white p-4 rounded-lg border border-gray-200">
+                                                    <p className="text-xs text-gray-500 mb-1">Tasks Due</p>
+                                                    <p className="text-2xl font-semibold text-violet-600">12</p>
+                                                    <p className="text-xs text-orange-600">3 overdue</p>
+                                                </div>
+                                            </div>
 
-                                                {/* Recent Contacts */}
-                                                <div className="space-y-3">
+                                            {/* Recent Contacts */}
+                                            <div className="space-y-4">
+                                                <div className="flex justify-between items-center">
                                                     <h4 className="font-medium text-gray-700">Recent Contacts</h4>
-                                                    {/* First Contact */}
-                                                    <div className="flex justify-between items-center p-3 bg-white/40 rounded-lg">
-                                                        <div className="flex items-center gap-2">
-                                                            <div className="w-8 h-8 rounded-full bg-violet-100 flex items-center justify-center">
+                                                    <button className="text-xs text-violet-600 hover:text-violet-700">View All</button>
+                                                </div>
+                                                
+                                                <div className="space-y-3">
+                                                    {/* Contact 1 */}
+                                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-gray-200">
+                                                        <div className="flex items-center gap-3">
+                                                            <div className="w-10 h-10 rounded-full bg-violet-100 flex items-center justify-center">
                                                                 <span className="text-violet-600 font-medium">JD</span>
                                                             </div>
                                                             <div>
-                                                                <p className="font-medium">John Doe</p>
-                                                                <p className="text-xs text-gray-500">Acme Corp • $25,000 Deal</p>
+                                                                <p className="font-medium text-gray-800">John Doe</p>
+                                                                <p className="text-xs text-gray-500">Acme Corp • CEO • $25,000 Deal</p>
                                                             </div>
                                                         </div>
-                                                        <div className="flex items-center gap-2">
+                                                        <div className="flex items-center gap-3">
                                                             <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs">Active Lead</span>
                                                             <span className="text-xs text-gray-500">2 days ago</span>
                                                         </div>
                                                     </div>
 
-                                                    {/* Second Contact */}
-                                                    <div className="flex justify-between items-center p-3 bg-white/40 rounded-lg">
-                                                        <div className="flex items-center gap-2">
-                                                            <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
+                                                    {/* Contact 2 */}
+                                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-gray-200">
+                                                        <div className="flex items-center gap-3">
+                                                            <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
                                                                 <span className="text-blue-600 font-medium">AS</span>
                                                             </div>
                                                             <div>
-                                                                <p className="font-medium">Alice Smith</p>
-                                                                <p className="text-xs text-gray-500">TechStart Inc • $15,000 Deal</p>
+                                                                <p className="font-medium text-gray-800">Alice Smith</p>
+                                                                <p className="text-xs text-gray-500">TechStart Inc • CTO • $15,000 Deal</p>
                                                             </div>
                                                         </div>
-                                                        <div className="flex items-center gap-2">
+                                                        <div className="flex items-center gap-3">
                                                             <span className="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs">In Progress</span>
                                                             <span className="text-xs text-gray-500">1 day ago</span>
                                                         </div>
                                                     </div>
 
-                                                    {/* Third Contact */}
-                                                    <div className="flex justify-between items-center p-3 bg-white/40 rounded-lg">
-                                                        <div className="flex items-center gap-2">
-                                                            <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+                                                    {/* Contact 3 */}
+                                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-gray-200">
+                                                        <div className="flex items-center gap-3">
+                                                            <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
                                                                 <span className="text-green-600 font-medium">RJ</span>
                                                             </div>
                                                             <div>
-                                                                <p className="font-medium">Robert Johnson</p>
-                                                                <p className="text-xs text-gray-500">Global Solutions • $50,000 Deal</p>
+                                                                <p className="font-medium text-gray-800">Robert Johnson</p>
+                                                                <p className="text-xs text-gray-500">Global Solutions • VP Sales • $50,000 Deal</p>
                                                             </div>
                                                         </div>
-                                                        <div className="flex items-center gap-2">
+                                                        <div className="flex items-center gap-3">
                                                             <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">New Deal</span>
                                                             <span className="text-xs text-gray-500">Just now</span>
                                                         </div>
                                                     </div>
-                                                </div>
 
-                                                {/* Quick Actions */}
-                                                <div className="mt-6 pt-6 border-t border-gray-200">
-                                                    <h4 className="font-medium text-gray-700 mb-3">Quick Actions</h4>
-                                                    <div className="grid grid-cols-4 gap-3">
-                                                        <button className="p-2 bg-white/40 rounded-lg text-center hover:bg-white/60 transition-colors">
-                                                            <span className="block text-xs text-gray-500">New Contact</span>
-                                                        </button>
-                                                        <button className="p-2 bg-white/40 rounded-lg text-center hover:bg-white/60 transition-colors">
-                                                            <span className="block text-xs text-gray-500">Add Deal</span>
-                                                        </button>
-                                                        <button className="p-2 bg-white/40 rounded-lg text-center hover:bg-white/60 transition-colors">
-                                                            <span className="block text-xs text-gray-500">Schedule Task</span>
-                                                        </button>
-                                                        <button className="p-2 bg-white/40 rounded-lg text-center hover:bg-white/60 transition-colors">
-                                                            <span className="block text-xs text-gray-500">View Reports</span>
-                                                        </button>
+                                                    {/* Contact 4 */}
+                                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-gray-200">
+                                                        <div className="flex items-center gap-3">
+                                                            <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
+                                                                <span className="text-purple-600 font-medium">MK</span>
+                                                            </div>
+                                                            <div>
+                                                                <p className="font-medium text-gray-800">Maria Kim</p>
+                                                                <p className="text-xs text-gray-500">Innovation Labs • Director • $35,000 Deal</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex items-center gap-3">
+                                                            <span className="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs">Follow Up</span>
+                                                            <span className="text-xs text-gray-500">3 hours ago</span>
+                                                        </div>
                                                     </div>
+
+                                                    {/* Contact 5 */}
+                                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-gray-200">
+                                                        <div className="flex items-center gap-3">
+                                                            <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center">
+                                                                <span className="text-indigo-600 font-medium">DW</span>
+                                                            </div>
+                                                            <div>
+                                                                <p className="font-medium text-gray-800">David Wilson</p>
+                                                                <p className="text-xs text-gray-500">Enterprise Corp • Manager • $18,000 Deal</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex items-center gap-3">
+                                                            <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs">Overdue</span>
+                                                            <span className="text-xs text-gray-500">5 days ago</span>
+                                                        </div>
+                                                    </div>
+
+                                                    {/* Contact 6 */}
+                                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg border border-gray-200">
+                                                        <div className="flex items-center gap-3">
+                                                            <div className="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center">
+                                                                <span className="text-teal-600 font-medium">LB</span>
+                                                            </div>
+                                                            <div>
+                                                                <p className="font-medium text-gray-800">Lisa Brown</p>
+                                                                <p className="text-xs text-gray-500">Future Tech • Founder • $75,000 Deal</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="flex items-center gap-3">
+                                                            <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">Proposal Sent</span>
+                                                            <span className="text-xs text-gray-500">6 hours ago</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {/* Quick Actions */}
+                                            <div className="mt-8 pt-6 border-t border-gray-200">
+                                                <h4 className="font-medium text-gray-700 mb-4">Quick Actions</h4>
+                                                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                                    <button className="p-3 bg-white rounded-lg border border-gray-200 text-center hover:bg-gray-50 transition-colors">
+                                                        <div className="w-8 h-8 bg-violet-100 rounded-lg mx-auto mb-2 flex items-center justify-center">
+                                                            <span className="text-violet-600 text-sm">+</span>
+                                                        </div>
+                                                        <span className="block text-xs text-gray-600 font-medium">New Contact</span>
+                                                    </button>
+                                                    <button className="p-3 bg-white rounded-lg border border-gray-200 text-center hover:bg-gray-50 transition-colors">
+                                                        <div className="w-8 h-8 bg-blue-100 rounded-lg mx-auto mb-2 flex items-center justify-center">
+                                                            <span className="text-blue-600 text-sm">$</span>
+                                                        </div>
+                                                        <span className="block text-xs text-gray-600 font-medium">Add Deal</span>
+                                                    </button>
+                                                    <button className="p-3 bg-white rounded-lg border border-gray-200 text-center hover:bg-gray-50 transition-colors">
+                                                        <div className="w-8 h-8 bg-green-100 rounded-lg mx-auto mb-2 flex items-center justify-center">
+                                                            <span className="text-green-600 text-sm">✓</span>
+                                                        </div>
+                                                        <span className="block text-xs text-gray-600 font-medium">Schedule Task</span>
+                                                    </button>
+                                                    <button className="p-3 bg-white rounded-lg border border-gray-200 text-center hover:bg-gray-50 transition-colors">
+                                                        <div className="w-8 h-8 bg-orange-100 rounded-lg mx-auto mb-2 flex items-center justify-center">
+                                                            <span className="text-orange-600 text-sm">📊</span>
+                                                        </div>
+                                                        <span className="block text-xs text-gray-600 font-medium">View Reports</span>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
