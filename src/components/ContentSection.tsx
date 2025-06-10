@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 export default function ContentSection() {
     return (
         <section>
-            <div className="bg-muted/50 py-24">
+            <div className="py-24">
                 <div className="mx-auto w-full max-w-5xl px-6">
                     <div className="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
                         <div>
@@ -116,4 +116,4 @@ export const CodeIllustration = ({ className }: { className?: string }) => {
             </ul>
         </div>
     )
-} 
+}
