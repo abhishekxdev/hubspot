@@ -1,9 +1,22 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import { Header } from "@/components/Header"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export const Hero = () => {
+    const navigate = useNavigate()
+
+    const handleGetStarted = () => {
+        navigate('/signup')
+    }
+
+    const scrollToFeatures = () => {
+        const element = document.getElementById('features')
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
+
     return (
         <>
             <Header />
@@ -47,15 +60,17 @@ export const Hero = () => {
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button
+                                        onClick={handleGetStarted}
                                         size="lg"
-                                        className="bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 text-white px-8 py-6 text-lg rounded-xl"
+                                        className="bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 text-white px-8 py-6 text-lg rounded-xl transition-all duration-200"
                                     >
                                         Get Started
                                     </Button>
                                     <Button
+                                        onClick={scrollToFeatures}
                                         variant="outline"
                                         size="lg"
-                                        className="border-2 border-white/20 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-lg px-8 py-6 rounded-xl"
+                                        className="border-2 border-white/20 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-lg px-8 py-6 rounded-xl transition-all duration-200"
                                     >
                                         Learn More
                                     </Button>

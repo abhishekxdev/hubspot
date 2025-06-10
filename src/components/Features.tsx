@@ -60,7 +60,7 @@ const AIAssistantIllustration = () => {
 
 export const Features = () => {
     return (
-        <section>
+        <section id="features">
             <div className="py-24">
                 <div className="mx-auto w-full max-w-3xl px-6">
                     <h2 className="text-foreground text-balance text-3xl font-semibold md:text-4xl">
