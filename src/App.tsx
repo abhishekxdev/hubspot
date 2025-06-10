@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -17,7 +16,7 @@ const BackgroundWrapper = ({ children }: { children: React.ReactNode }) => {
     <div className="min-h-screen">
       <div className="fixed inset-0 z-0">
         <img
-          src="/lovable-uploads/75f9e223-0037-46bd-bfaa-22a92cdc862d.png"
+          src="/aura.jpeg"
           alt="Background"
           className="h-full w-full object-cover"
         />
