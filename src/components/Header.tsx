@@ -48,7 +48,7 @@ export const Header = () => {
                                 </li>
                                 <li>
                                     <Link to="/pricing" className="text-sm font-medium hover:text-violet-400">
-                                        Pricing
+                                        Integration
                                     </Link>
                                 </li>
                             </ul>
