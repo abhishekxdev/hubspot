@@ -28,28 +28,6 @@ export const Hero = () => {
                                 <div className="inline-flex items-center rounded-full border-2 border-white/20 px-3 sm:px-4 py-2 bg-white/10 backdrop-blur-sm mb-6 sm:mb-8">
                                     <span className="text-xs sm:text-sm font-medium">✨ HubSpot CRM Integration</span>
                                 </div>
-                                
-                                {/* Left Box - Hidden on mobile and tablet */}
-                                <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 hidden xl:block">
-                                    <div className="bg-white border-2 border-white/20 rounded-xl p-4 w-64 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-                                        <div className="flex items-center gap-2 mb-2">
-                                            <div className="w-2 h-2 bg-violet-500 rounded-full"></div>
-                                            <span className="text-sm font-medium text-black">Unified Dashboard</span>
-                                        </div>
-                                        <p className="text-sm text-black">Manage contacts, deals, and tickets all in one place with real-time HubSpot sync</p>
-                                    </div>
-                                </div>
-
-                                {/* Right Box - Hidden on mobile and tablet */}
-                                <div className="absolute right-0 top-[70%] -translate-y-1/2 translate-x-1/2 hidden xl:block">
-                                    <div className="bg-white border-2 border-white/20 rounded-xl p-4 w-64 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-                                        <div className="flex items-center gap-2 mb-2">
-                                            <div className="w-2 h-2 bg-violet-500 rounded-full"></div>
-                                            <span className="text-sm font-medium text-black">Smart Automation</span>
-                                        </div>
-                                        <p className="text-sm text-black">Automate workflows and keep your team focused on closing deals</p>
-                                    </div>
-                                </div>
 
                                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal mb-4 sm:mb-6 leading-tight">
                                     <span className="block sm:inline">All Your HubSpot CRM Tasks in</span>
